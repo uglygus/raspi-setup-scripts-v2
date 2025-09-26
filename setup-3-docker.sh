@@ -10,8 +10,12 @@ cp -R configs/docker ~/docker
 
 sudo usermod -aG docker $USER
 
+sudo apt update -y
+sudo apt install docker-compose -y
+
 sudo systemctl enable docker
 sudo systemctl start docker
+sudo docker compose up -d
 sudo systemctl status --no-pager docker
 
 
