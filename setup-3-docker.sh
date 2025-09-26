@@ -16,6 +16,6 @@ sudo apt install docker-compose -y
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo docker compose up -d
-sudo systemctl status --no-pager docker
+systemctl status docker --no-pager
 
 

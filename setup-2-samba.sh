@@ -24,4 +24,4 @@ sudo smbpasswd -e $USERNAME
 
 sudo systemctl restart smbd
 sudo systemctl enable smbd
-systemctl status smbd
+systemctl status smbd --no-pager
