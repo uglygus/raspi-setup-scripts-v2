@@ -1,7 +1,7 @@
 #!/bin/bash
+set -e 
 
-echo "\n___  $0  ___\nSetting up Samba file sharing..."
-
+echo "\nRUNNING: $0  -->\nSetting up Samba file sharing..."
 
 SHARED_DIR="/home/shared/pishare"
 USERNAME=$(whoami) # MUST be an existing user, $(whoami) to get current user 

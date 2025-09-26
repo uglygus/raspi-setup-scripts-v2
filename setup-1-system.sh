@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "\n$0  __\nUpdating and upgrading packages (non-interactive)..."
+echo "\nRUNNING: $0  -->\nUpdating and upgrading packages (non-interactive)..."
 
 # Raspi check
 if [ ! -f /proc/device-tree/model ]; then
