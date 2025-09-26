@@ -10,10 +10,11 @@
 curl -L https://github.com/uglygus/raspi-setup-scripts-v2/archive/refs/heads/main.zip  --output raspi-setup-scripts.zip
 
 unzip raspi-setup-scripts.zip
-cd raspi-setup-scripts-main
+cd raspi-setup-scripts-v2-main
 chmod +x *.sh
-./setup-samba.sh
-./setup-docker.sh
+./setup-1-system.sh
+./setup-2-system.sh
+./setup-3-docker.sh
 
 ```
 
