@@ -1,8 +1,14 @@
-# raspi-setup-scripts
+# raspi-setup-scripts-v2
 
-/sh sh versions of install scripts ( simpler )
+On a base install of Raspberry OS this should:
 
-/py py versions of install swcripts these got overly complicated and I'll probably abandon them
+- Update the system to latest packages
+- Setup Samba file sharing with a share calle pishare (/home/shared/pishare)
+- Install Docker
+- Install Homepage in docker container
+- Install Transmission in docker container
+- Install Prowlarr in docker container
+- Install Emby in docker container
 
 ## Installation
 
@@ -21,7 +27,3 @@ sh setup-3-docker.sh
 - Look into FlexGet
 - Start with pre-populated config file. That wil be simplest. Rather than programmatically changing individual parts.
 - add a comment to them.
-
-# This config file created by setup-samba.sh on datetime
-
-# Assuming
