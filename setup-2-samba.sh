@@ -14,7 +14,9 @@ LOCAL_CONFIG_FILE=configs/samba/$(basename "$CONFIG_FILE")
 sudo mkdir -p $SHARED_DIR
 sudo chown -R $USERNAME:$USERNAME $SHARED_DIR
 
-sudo cp $CONFIG_FILE $CONFIG_FILE.bak
+if [ -f "$CONFIG_FILE" ]; then
+    sudo cp "$CONFIG_FILE" "$CONFIG_FILE.bak"
+fi
 sudo cp $LOCAL_CONFIG_FILE $CONFIG_FILE
 
 sudo smbpasswd -a $USERNAME

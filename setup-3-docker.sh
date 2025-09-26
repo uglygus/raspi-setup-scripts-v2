@@ -6,7 +6,6 @@ echo "\nRUNNING: $0  -->\nInstalling up Docker plus Emby, Homepage, Transmission
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
-mkdir -p /shared/pishare/{movies,tv,shorts,downloads,incomplete,torrents}
 cp -R configs/docker ~/docker
 
 sudo usermod -aG docker $USER
