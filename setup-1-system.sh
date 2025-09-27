@@ -16,9 +16,9 @@ if ! echo "$MODEL" | grep -q "Raspberry"; then
     exit 1
 fi
 
+export RPI_SETUP_SCRIPTS_SMBSHARE="/home/shared/pishare"
+export RPI_SETUP_SCRIPTS_MEDIA_DIR="/home/shared/pishare/media"
 
-
-# Update
 sudo apt-get update -y
 
 sudo apt-get install -y \

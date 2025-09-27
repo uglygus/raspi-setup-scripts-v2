@@ -11,6 +11,10 @@ HOSTNAME=$(hostname).local
 CONFIG_FILE="/etc/samba/smb.conf"
 LOCAL_CONFIG_FILE=configs/samba/$(basename "$CONFIG_FILE")
 
+sudo apt-get update && sudo apt upgrade -y
+sudo apt-get install samba samba-common-bin -y
+sudo apt-get autoremove -y
+
 sudo mkdir -p $SHARED_DIR
 sudo chown -R $USERNAME:$USERNAME $SHARED_DIR
 
