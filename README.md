@@ -10,6 +10,13 @@ On a base install of Raspberry OS this should:
 - Install Prowlarr in docker container
 - Install Emby in docker container
 
+
+homepage      http://nice.local:3000/
+transmission  http://nice.local:9091/
+emby          http://nice.local:8096/
+prowlarr      http://nice.local:9696/
+
+
 ## Installation
 
 ```

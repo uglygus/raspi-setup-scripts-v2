@@ -14,6 +14,9 @@ sudo usermod -aG docker $USER
 # sudo apt-get update -y
 # sudo apt-get install docker-compose -y
 
+configs/docker
+#
+
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo docker compose up -d
