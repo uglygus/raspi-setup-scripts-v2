@@ -20,24 +20,26 @@ prowlarr      <http://hostname.local:9696/>
 ### Installation
 
 ```
+
 curl -L https://github.com/uglygus/raspi-setup-scripts-v2/archive/refs/heads/main.zip  --output raspi-setup-scripts.zip
 
 unzip raspi-setup-scripts.zip
+
 cd raspi-setup-scripts-v2-main
+
 sh setup-1-system.sh
+
 sh setup-2-samba.sh
+
 sh setup-3-docker.sh
+
 ```
 
 ### Files
 
-
 /home/shared/pishare/media/
 /home/shared/pishare/media/movies
 /home/shared/pishare/media/tv
-
-
-
 
 ## TODO
 
