@@ -14,8 +14,11 @@ sudo usermod -aG docker $USER
 # sudo apt-get update -y
 # sudo apt-get install docker-compose -y
 
-configs/docker
-#
+cd configs/docker
+
+# For docker to pick up environment variables from .env file
+# .env file can't 
+export HOSTNAME=$(hostname)
 
 sudo systemctl enable docker
 sudo systemctl start docker

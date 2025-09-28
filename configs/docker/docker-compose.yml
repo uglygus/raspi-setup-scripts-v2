@@ -9,8 +9,9 @@ services:
       PUID: ${PUID}
       PGID: ${PGID}
       TZ: ${TZ}
+      HOMEPAGE_ALLOWED_HOSTS: ${MACHINE_HOSTNAME}:${HOMEPAGE_PORT} 
     ports:
-      - 3000:3000
+      - ${HOMEPAGE_PORT}:${HOMEPAGE_PORT} 
     volumes:
       - ./homepage/config:/app/config
 
